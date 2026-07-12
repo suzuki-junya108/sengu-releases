@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sengu — サイトを新しい器へ</title>
+<meta name="description" content="WordPressなどのCMSサイトをまるごと取り込み、サーバー不要の静的サイトとして無料で公開できるMacアプリ。">
+<style>
+  :root {
+    --ink: #16181D; --ink2: rgba(20,20,25,.6); --ink3: rgba(20,20,25,.35);
+    --ver: #D14A35; --hairline: rgba(20,20,25,.14); --fill: rgba(20,20,25,.05);
+  }
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+    color: var(--ink); background: #fff; line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 80px; }
+  .hero { text-align: center; padding: 40px 0 56px; }
+  .hero h1 { font-size: 44px; font-weight: 800; letter-spacing: .02em; margin-top: 20px; }
+  .hero .tag { font-size: 18px; color: var(--ink2); margin-top: 6px; }
+  .dl {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-top: 32px; padding: 16px 36px; border-radius: 999px;
+    background: var(--ink); color: #fff; text-decoration: none;
+    font-size: 17px; font-weight: 700;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 10px 30px rgba(0,0,0,.15);
+    transition: transform .15s cubic-bezier(.34,1.4,.64,1);
+  }
+  .dl:active { transform: scale(.97); }
+  .req { font-size: 13px; color: var(--ink3); margin-top: 14px; }
+  .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin: 48px 0; }
+  .step { border: .5px solid var(--hairline); border-radius: 22px; padding: 22px 18px; text-align: center; }
+  .step .n {
+    width: 30px; height: 30px; border-radius: 50%; margin: 0 auto 10px;
+    display: grid; place-items: center; background: var(--ink); color: #fff;
+    font: 700 14px/1 ui-monospace, monospace;
+  }
+  .step h3 { font-size: 16px; margin-bottom: 6px; }
+  .step p { font-size: 13.5px; color: var(--ink2); }
+  .feat { margin: 12px 0 0; padding: 0; list-style: none; }
+  .feat li { padding: 10px 0 10px 26px; position: relative; border-top: .5px solid var(--hairline); font-size: 15px; }
+  .feat li::before { content: ""; position: absolute; left: 4px; top: 1.35em; width: 8px; height: 8px; border-radius: 50%; background: var(--ver); }
+  h2 { font-size: 20px; margin: 48px 0 8px; }
+  footer { margin-top: 64px; padding-top: 20px; border-top: .5px solid var(--hairline); font-size: 13px; color: var(--ink3); text-align: center; }
+  footer a { color: var(--ink2); }
+  @media (max-width: 640px) { .steps { grid-template-columns: 1fr; } .hero h1 { font-size: 34px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <svg viewBox="0 0 224 212" width="96" height="91" aria-hidden>
+      <circle cx="194" cy="44" r="24" fill="#D14A35"/>
+      <g fill="none" stroke="#16181D" stroke-linecap="round">
+        <path d="M20 184 Q48 154 76 178 Q102 148 128 174" stroke-width="13"/>
+        <path d="M92 136 Q113 114 134 132 Q152 111 170 126" stroke-width="10"/>
+        <path d="M146 96 Q160 82 174 94 Q186 81 198 90" stroke-width="7.5"/>
+      </g>
+    </svg>
+    <h1>Sengu</h1>
+    <p class="tag">サイトを新しい器へ。</p>
+    <p style="max-width:540px;margin:18px auto 0;color:var(--ink2)">
+      WordPressなどで運用中のサイトのURLを入れるだけで、ページも画像もまるごと手元に取り込み、
+      サーバー不要の静的サイトとして<strong>無料で</strong>公開し直せるMacアプリです。
+      サーバー代もセキュリティ更新も、もう要りません。
+    </p>
+    <a class="dl" href="https://github.com/suzuki-junya108/sengu-releases/releases/latest">
+      ⬇ 最新版をダウンロード
+    </a>
+    <p class="req">Apple Silicon Mac / macOS 14以降・署名/公証済み・自動アップデート対応</p>
+  </div>
+
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>取り込む</h3><p>いまのサイトのURLを入れると、全ページを自動で取り込みます。</p></div>
+    <div class="step"><div class="n">2</div><h3>整える</h3><p>AIとのチャットで文言や画像を編集。変更は自動でバックアップされます。</p></div>
+    <div class="step"><div class="n">3</div><h3>公開する</h3><p>ワンクリックで公開。独自ドメインもそのまま使えます。</p></div>
+  </div>
+
+  <h2>特長</h2>
+  <ul class="feat">
+    <li>お問い合わせフォームとサイト内検索も、サーバーなしで動く形に自動変換</li>
+    <li>AI編集はMacの中だけで動くローカルAIに対応（内容を外部に送りません）</li>
+    <li>すべての変更を世代管理。いつでもワンクリックで元に戻せます</li>
+    <li>アプリ以外のインストールは不要（AIも同梱）</li>
+  </ul>
+
+  <footer>
+    <p>Sengu はローカルで動作し、利用状況の収集を行いません。</p>
+    <p style="margin-top:6px"><a href="https://github.com/suzuki-junya108/sengu-releases/releases">リリースノート</a></p>
+  </footer>
+</div>
+</body>
+</html>
